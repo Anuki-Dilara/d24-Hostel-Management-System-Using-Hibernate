@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #96B6C5; -fx-background-radius: 50; -fx-border-radius: 50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24.controller.login_form_controller">
+   <children>
+      <Pane layoutX="105.0" layoutY="27.0" prefHeight="55.0" prefWidth="391.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="166.0" layoutY="14.0" text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="tfUsername" layoutX="79.0" layoutY="250.0" prefHeight="28.0" prefWidth="299.0" promptText="Username" />
+      <CheckBox fx:id="cbShowPassword" layoutX="79.0" layoutY="329.0" mnemonicParsing="false" onAction="#cbShowPasswordOnAction" text="show password" />
+      <JFXButton fx:id="btnSignIn" buttonType="RAISED" focusTraversable="false" layoutX="430.0" layoutY="312.0" onAction="#btnSignInOnAction" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #212428; -fx-background-radius: 20px;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="192.0" layoutY="358.0" text="Don't have an account? ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="linkNewAccount" layoutX="369.0" layoutY="354.0" onAction="#linkNewAccountOnAction" text="Sign Up">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="tfPassword" layoutX="79.0" layoutY="291.0" prefHeight="28.0" prefWidth="299.0" />
+      <PasswordField fx:id="pfPassword" layoutX="79.0" layoutY="291.0" prefHeight="28.0" prefWidth="299.0" promptText="Password" />
+      <Circle fill="#a7cff5" layoutX="301.0" layoutY="164.0" radius="71.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="94.0" fitWidth="96.0" layoutX="253.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

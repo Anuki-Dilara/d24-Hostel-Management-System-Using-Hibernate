@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24.controller.Pending_payments_form_controller">
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="47.32" radius="23.9925" spread="0.07" width="50.65">
+            <color>
+                <Color blue="0.7372549176216125" green="0.7372549176216125" red="0.7372549176216125" />
+            </color>
+        </DropShadow>
+    </effect>
+   <children>
+      <TableView fx:id="tblNonPayedStudents" layoutX="15.0" layoutY="99.0" prefHeight="445.0" prefWidth="970.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="111.0" text="Student ID" />
+          <TableColumn fx:id="colStudentName" prefWidth="170.0" text="Student Name" />
+            <TableColumn fx:id="colAddress" prefWidth="165.0" text="Address" />
+            <TableColumn fx:id="colContactNo" prefWidth="149.0" text="Contact" />
+            <TableColumn fx:id="colKeyMoney" prefWidth="139.0" text="Key Money" />
+            <TableColumn fx:id="colResId" prefWidth="115.0" text="Reservation ID" />
+            <TableColumn fx:id="colRoomId" prefWidth="120.0" text="Room Type ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

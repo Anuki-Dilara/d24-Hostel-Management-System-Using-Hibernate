@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24.controller.Reservation_form_controller">
+    <children>
+        <Text fill="#051928" layoutX="36.0" layoutY="78.0" opacity="0.13" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation" wrappingWidth="505.98828125">
+            <font>
+                <Font size="51.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txtRID" editable="false" layoutX="768.0" layoutY="170.0" prefHeight="25.0" prefWidth="174.0" />
+        <Text fill="#4a4a4a" layoutX="561.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation Date :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="#4a4a4a" layoutX="561.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation ID :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="#4a4a4a" layoutX="557.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Status :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Text>
+        <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="655.0" layoutY="483.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: FF9B82;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXComboBox fx:id="cmbstatus" layoutX="768.0" layoutY="279.0" prefHeight="25.0" prefWidth="174.0" />
+      <Text fill="#4a4a4a" layoutX="561.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cmbRType" layoutX="768.0" layoutY="223.0" onAction="#cmbRTypeOnAction" prefHeight="25.0" prefWidth="174.0" />
+      <JFXButton fx:id="btnDetails" buttonType="RAISED" layoutX="807.0" layoutY="483.0" onAction="#btnDetailsOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: FF3FA4;" text="Details" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <DatePicker fx:id="txtRDate" layoutX="768.0" layoutY="117.0" />
+      <AnchorPane layoutX="26.0" layoutY="91.0" prefHeight="441.0" prefWidth="448.0" style="-fx-background-color: #F0F0F0;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="txtContact" layoutX="159.0" layoutY="242.0" prefHeight="25.0" prefWidth="275.0" />
+            <Text fill="#4a4a4a" layoutX="14.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#4a4a4a" layoutX="14.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="genderCombo" layoutX="159.0" layoutY="187.0" prefHeight="25.0" prefWidth="275.0" />
+            <Label layoutX="36.0" layoutY="401.0" text="Key Money :">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblKMoney" layoutX="159.0" layoutY="401.0" text="RS 000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtStudentId" layoutX="184.0" layoutY="117.0" onAction="#txtStudentIdOnAction" prefHeight="25.0" prefWidth="275.0" />
+      <Text fill="#4a4a4a" layoutX="36.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="184.0" layoutY="170.0" prefHeight="25.0" prefWidth="275.0" />
+      <Text fill="#4a4a4a" layoutX="38.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4a4a4a" layoutX="38.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="txtDOB" layoutX="184.0" layoutY="223.0" prefHeight="25.0" prefWidth="275.0" />
+      <TextField fx:id="txtAddress" layoutX="184.0" layoutY="391.0" prefHeight="25.0" prefWidth="275.0" />
+      <Text fill="#4a4a4a" layoutX="38.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="507.0" layoutY="483.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #57375D;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="47.32" radius="23.9925" spread="0.07" width="50.65">
+            <color>
+                <Color blue="0.7372549176216125" green="0.7372549176216125" red="0.7372549176216125" />
+            </color>
+        </DropShadow>
+    </effect>
+</AnchorPane>

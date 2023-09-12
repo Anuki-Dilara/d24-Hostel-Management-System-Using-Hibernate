@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1000.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24.controller.Room_form_controller">
+   <children>
+      <TextField fx:id="txtQty" layoutX="715.0" layoutY="182.0" prefHeight="25.0" prefWidth="166.0" />
+      <TextField fx:id="txtID" layoutX="179.0" layoutY="120.0" onAction="#txtIDOnAction" prefHeight="25.0" prefWidth="166.0" />
+      <TextField fx:id="txtKeyMoney" layoutX="715.0" layoutY="116.0" prefHeight="25.0" prefWidth="166.0" />
+      <Text fill="#051928" layoutX="34.0" layoutY="69.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms" wrappingWidth="206.8388671875">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Text>
+      <Text fill="#4a4a4a" layoutX="34.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4a4a4a" layoutX="570.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Qty :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4a4a4a" layoutX="570.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key Money :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#4a4a4a" layoutX="34.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblRooms" layoutX="34.0" layoutY="240.0" prefHeight="233.0" prefWidth="857.0">
+        <columns>
+          <TableColumn fx:id="colRoomTypeId" prefWidth="124.0" text="ID" />
+          <TableColumn fx:id="colRoomType" prefWidth="150.0" text="Type" />
+            <TableColumn fx:id="colKeyPrice" prefWidth="155.0" text="Key Money" />
+            <TableColumn fx:id="colAvailableRooms" prefWidth="106.0" text="Qty" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="494.0" layoutY="501.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: BC7AF9;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="631.0" layoutY="501.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #57375D;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="770.0" layoutY="501.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="txtType" layoutX="179.0" layoutY="182.0" prefHeight="25.0" prefWidth="166.0" />
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN" height="47.32" radius="23.9925" spread="0.07" width="50.65">
+         <color>
+            <Color blue="0.7372549176216125" green="0.7372549176216125" red="0.7372549176216125" />
+         </color>
+      </DropShadow>
+   </effect>
+</AnchorPane>
