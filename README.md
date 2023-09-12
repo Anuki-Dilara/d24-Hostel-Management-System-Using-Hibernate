@@ -1,1 +1,1 @@
-# <h1> Hostel Management System </h1>
+# <h1>Hostel Management System</h1>
